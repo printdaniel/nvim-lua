@@ -25,7 +25,6 @@ return require('packer').startup(function(use)
     use 'kdheepak/lazygit.nvim'
     use 'terrortylor/nvim-comment'
     use 'rafamadriz/friendly-snippets'
-    use 'Pocco81/AutoSave.nvim'
     use {'turbio/bracey.vim', run = 'cd app & npm install --prefix server'}
     use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install'}
     use 'sbdchd/neoformat'

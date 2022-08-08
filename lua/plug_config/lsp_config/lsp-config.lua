@@ -23,3 +23,6 @@ for _, lsp in ipairs(servers) do
     root_dir = function() return vim.loop.cwd() end
   }
 end
+
+
+require 'lspconfig'.gopls.setup{}

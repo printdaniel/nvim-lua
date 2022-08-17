@@ -39,6 +39,11 @@ end
 keymap('n', '<F5>', '<cmd> Run <cr>')
 
 -- Other bindings nvimtree, markdown preview, Neoformat, Colorizer, LazyGit
+
+keymap('n', '<leader>w','<cmd> :w <cr>')
+keymap('i', '<leader>e','<Esc>')
+keymap('v', '<leader>e','<Esc>')
+
 keymap('n', '<F7>', '<cmd> NvimTreeToggle <cr>')
 keymap('n', '<leader>md', '<cmd> MarkdownPreviewToggle <cr>')
 keymap('n', '<Leader>p', '<cmd> Neoformat <cr>')

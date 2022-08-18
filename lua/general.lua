@@ -1,6 +1,6 @@
 -- General config
 
-vim.g.mapleader = ' '
+vim.g.mapleader = ','
 vim.opt['number'] = true
 vim.opt['relativenumber'] = true
 vim.opt['ruler'] = true

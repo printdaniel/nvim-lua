@@ -8,6 +8,13 @@ if fn.empty(fn.glob(install_path)) > 0 then
   execute 'packadd packer.nvim'
 end
 
+require('general')
+require('functions')
+require('keymaps')
+require('commands')
+require('runner')
+
+
 -- include plugins and their config
 require('plugins')
 require('plug_config.treesitter')
@@ -25,17 +32,11 @@ require('plug_config.comment')
 require('plug_config.bufferline')
 require('plug_config.hop')
 require('plug_config.gitsigns')
-require('plug_config.autosave')
+require('plug_config.autosave') -- Sin funcionar
 require('plug_config.dashboard')
 require('plug_config.nvim-tree')
 require('plug_config.telescope')
 
-
-require('general')
-require('functions')
-require('bindings')
-require('commands')
-require('runner')
 
 
 -- CpHelper config
@@ -43,4 +44,5 @@ vim.g.cphdir = os.getenv( 'HOME' )..'/problems'
 
 -- Rooter config
 vim.g.rooter_pattern = { 'input1', 'output1' }
+
 

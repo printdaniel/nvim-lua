@@ -7,7 +7,7 @@ local nvim_lsp = require('lspconfig')
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
-local servers = {'pylsp','tsserver', 'hls', 'cmake', 'html','cssls', 'rust_analyzer', 'sumneko_lua', 'bashls', 'ccls','clangd', 'marksman'}
+local servers = {'tsserver', 'hls', 'cmake', 'html','cssls', 'rust_analyzer', 'sumneko_lua', 'bashls', 'ccls','clangd', 'marksman'}
 
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
@@ -21,5 +21,4 @@ for _, lsp in ipairs(servers) do
 end
 
 require 'lspconfig'.gopls.setup{}
-require 'lspconfig'.pylsp.setup{}
-
+require'lspconfig'.jedi_language_server.setup{}

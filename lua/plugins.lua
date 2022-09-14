@@ -34,7 +34,16 @@ return require('packer').startup(function(use)
             require"surround".setup {mappings_style = "surround"}
         end
     }
+
     use { "ellisonleao/gruvbox.nvim" } 
+    use { "catppuccin/nvim", as = "catppuccin" }
+    use {"marko-cerovac/material.nvim"}
+    use({"xiyaowong/nvim-transparent",
+        config = function()
+        require("transparent").setup {
+        enable = true,}
+        end
+        })
     
     use {
         'lewis6991/gitsigns.nvim',

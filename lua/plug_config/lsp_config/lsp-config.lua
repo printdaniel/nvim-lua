@@ -1,9 +1,8 @@
 -- Use following commadn to install language server in arch using pacman, paru(AUR) and npm
-
 -- sudo pacman -S pyright bash-language-server lua-language-server ccls haskell-language-server typescript-language-server 
 -- paru -S arduino-language-server cmake-language-server-git cssmodules-language-server jdtls
-local nvim_lsp = require('lspconfig')
 
+local nvim_lsp = require('lspconfig')
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
@@ -22,3 +21,5 @@ end
 
 require 'lspconfig'.gopls.setup{}
 require'lspconfig'.jedi_language_server.setup{}
+require'lspconfig'.bashls.setup{}
+require'lspconfig'.marksman.setup{}

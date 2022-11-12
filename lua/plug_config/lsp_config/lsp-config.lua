@@ -23,3 +23,4 @@ require 'lspconfig'.gopls.setup{}
 require'lspconfig'.jedi_language_server.setup{}
 require'lspconfig'.bashls.setup{}
 require'lspconfig'.marksman.setup{}
+require'lspconfig'.tsserver.setup{}
